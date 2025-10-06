@@ -86,11 +86,9 @@ This project analyzes how demographic and educational features (gender, race/eth
 ## Power BI Dashboard
 An interactive Power BI dashboard accompanies this analysis. It visualizes:
 - Score distributions by demographic groups
-- Correlation heatmap and feature importance
 - Impact of parental education and test preparation
 
-Placeholders for screenshots:
-```markdown
 ![Dashboard Page 1](Images/Dashboard_Page1.PNG)
 ![Dashboard Page 2](Images/Dashboard_Page2.PNG)
+
 
