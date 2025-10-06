@@ -47,7 +47,12 @@ This project analyzes how demographic and educational features (gender, race/eth
 
 ## Model Performance
 
-> **Selected model (final): Linear Regression** — chosen for its balance of high predictive performance, strong train/test stability, and interpretability.
+| Model | R² (Train) | R² (Test) | RMSE (Train) | RMSE (Test) |
+|--------|-------------|------------|---------------|--------------|
+| **Linear Regression** | 0.9507 | 0.9548 | 7.2751 | 7.2399 |
+| **Polynomial Regression** | 0.9520 | 0.9533 | 7.1761 | 7.3643 |
+| **Random Forest (Tuned)** | 0.9662 | 0.9385 | 6.0232 | 8.4512 |
+| **XGBoost (Tuned)** | 0.9579 | 0.9472 | 6.7247 | 7.8279 |
 
 ### Summary (key extracted results from notebook)
 - **Linear Regression**  
@@ -72,23 +77,12 @@ This project analyzes how demographic and educational features (gender, race/eth
 - Simpler model with direct, interpretable coefficients — valuable for educational domain insights.
 - While Random Forest and XGBoost produced comparable cross-validated results in some runs, they introduced more variance and complexity; Linear Regression consistently generalized well on the test set.
 
-### 📊 Model Comparison
-
-| Model | R² (Train) | R² (Test / CV) | RMSE | Notes |
-|-------|-------------|----------------|------|--------|
-| **Linear Regression** | 0.95 | 0.95 | 7.2 | Best overall performer, simple and interpretable |
-| **Polynomial Regression** | 0.95 | 0.95 | 7.1 | Slightly higher variance, no major gain |
-| **Random Forest (tuned)** | 0.96 | 0.93 | 6.02 | Strong cross-validation results but higher complexity |
-| **XGBoost (tuned)** | 0.95 | 0.94 | 6.7–7.8 | Good predictive power, but less interpretable |
-
 ---
 
 ## Power BI Dashboard
 An interactive Power BI dashboard accompanies this analysis. It visualizes:
-- Score distributions by demographic groups
-- Impact of parental education and test preparation
-
+- Overall Summary
 ![Dashboard Page 1](Images/Dashboard_Page1.PNG)
+
+- Demographics Analysis
 ![Dashboard Page 2](Images/Dashboard_Page2.PNG)
-
-
