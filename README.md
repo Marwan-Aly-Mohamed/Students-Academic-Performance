@@ -4,18 +4,6 @@
 
 ---
 
-## Table of Contents
-- [Overview](#overview)  
-- [Dataset](#dataset)  
-- [Project Structure](#project-structure)  
-- [Workflow](#workflow)  
-- [Model Performance](#model-performance)  
-- [Power BI Dashboard](#power-bi-dashboard)  
-- [How to Run](#how-to-run)  
-- [Future Improvements](#future-improvements)
-
----
-
 ## Overview
 This project analyzes how demographic and educational features (gender, race/ethnicity, parental education, lunch type, and test preparation course) relate to students’ exam performance. The target is an aggregate performance score (average of math, reading, and writing scores). Multiple regression models were trained and evaluated; Linear Regression was selected as the preferred model for its combination of strong performance, stability, and interpretability.
 
@@ -82,7 +70,9 @@ This project analyzes how demographic and educational features (gender, race/eth
 ## Power BI Dashboard
 An interactive Power BI dashboard accompanies this analysis. It visualizes:
 - Overall Summary
+  
 ![Dashboard Page 1](Images/Dashboard_Page1.PNG)
 
 - Demographics Analysis
+  
 ![Dashboard Page 2](Images/Dashboard_Page2.PNG)
